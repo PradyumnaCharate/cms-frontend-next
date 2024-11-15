@@ -1,0 +1,48 @@
+{
+  "name": "ImageSlider",
+  "description": "A customizable image slider with autoplay and interval options.",
+  "defaultSettings": {
+    "images": [],
+    "autoplay": false,
+    "interval": 5000,
+    "showThumbnails": true
+  },
+  "inputs": [
+    {
+      "name": "images",
+      "type": "array",
+      "formType": "file",
+      "label": "Images",
+      "description": "URLs of images to display in the slider"
+    },
+    {
+      "name": "autoplay",
+      "type": "boolean",
+      "formType": "select",
+      "options": [
+        { "label": "Yes", "value": true },
+        { "label": "No", "value": false }
+      ],
+      "label": "Autoplay",
+      "description": "Automatically cycle through images"
+    },
+    {
+      "name": "interval",
+      "type": "number",
+      "formType": "number",
+      "label": "Interval",
+      "description": "Time interval between slides in milliseconds"
+    },
+    {
+      "name": "showThumbnails",
+      "type": "boolean",
+      "formType": "select",
+      "options": [
+        { "label": "Yes", "value": true },
+        { "label": "No", "value": false }
+      ],
+      "label": "Show Thumbnails",
+      "description": "Display image thumbnails below the slider"
+    }
+  ]
+}

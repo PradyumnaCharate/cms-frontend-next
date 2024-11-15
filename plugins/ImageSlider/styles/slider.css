@@ -1,0 +1,35 @@
+/* plugins/ImageSlider/styles/slider.css */
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail-preview {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.thumbnail-preview img {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.thumbnail-preview img.active,
+.thumbnail-preview img:hover {
+  opacity: 1;
+  border: 2px solid #007bff;
+}
